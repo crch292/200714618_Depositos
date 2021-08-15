@@ -337,7 +337,7 @@ Partial Class Form1
         Me.Controls.Add(Me.tcpropio)
         Me.Controls.Add(Me.depositos)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Depositos"
         Me.depositos.ResumeLayout(False)
         Me.depositos.PerformLayout()
         Me.tipocuenta.ResumeLayout(False)
