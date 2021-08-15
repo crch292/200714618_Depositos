@@ -80,13 +80,8 @@
         End If
         interes.Text = formato(calculoInteres(tipocuentainteres, saldoaplicar))
         salidas.Visible = True
-
         totaldeposito.Text = formato(montodepositar)
-        nuevosaldo.Text = formato(montodepositar + Val(interes.Text) + santerior)
-
-
-
-
+        nuevosaldo.Text = formato(montodepositar + santerior + interes.Text)
     End Sub
 
     Private Sub limpiar()

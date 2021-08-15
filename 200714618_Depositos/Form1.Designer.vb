@@ -225,13 +225,14 @@ Partial Class Form1
         '
         'depositar
         '
+        Me.depositar.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.depositar.Font = New System.Drawing.Font("Segoe Print", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.depositar.Location = New System.Drawing.Point(103, 223)
         Me.depositar.Name = "depositar"
         Me.depositar.Size = New System.Drawing.Size(93, 30)
         Me.depositar.TabIndex = 11
         Me.depositar.Text = "depositar"
-        Me.depositar.UseVisualStyleBackColor = True
+        Me.depositar.UseVisualStyleBackColor = False
         Me.depositar.Visible = False
         '
         'totaldeposito
@@ -263,13 +264,14 @@ Partial Class Form1
         '
         'ingresar
         '
+        Me.ingresar.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ingresar.Font = New System.Drawing.Font("Segoe Print", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ingresar.Location = New System.Drawing.Point(324, 26)
         Me.ingresar.Name = "ingresar"
         Me.ingresar.Size = New System.Drawing.Size(133, 25)
         Me.ingresar.TabIndex = 15
         Me.ingresar.Text = "ingresar"
-        Me.ingresar.UseVisualStyleBackColor = True
+        Me.ingresar.UseVisualStyleBackColor = False
         '
         'salidas
         '
@@ -299,23 +301,25 @@ Partial Class Form1
         '
         'limpiarbutton
         '
+        Me.limpiarbutton.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.limpiarbutton.Font = New System.Drawing.Font("Segoe Print", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.limpiarbutton.Location = New System.Drawing.Point(599, 32)
         Me.limpiarbutton.Name = "limpiarbutton"
         Me.limpiarbutton.Size = New System.Drawing.Size(96, 26)
         Me.limpiarbutton.TabIndex = 18
         Me.limpiarbutton.Text = "limpiar"
-        Me.limpiarbutton.UseVisualStyleBackColor = True
+        Me.limpiarbutton.UseVisualStyleBackColor = False
         '
         'salir
         '
+        Me.salir.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.salir.Font = New System.Drawing.Font("Segoe Print", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.salir.Location = New System.Drawing.Point(599, 63)
         Me.salir.Name = "salir"
         Me.salir.Size = New System.Drawing.Size(96, 28)
         Me.salir.TabIndex = 19
         Me.salir.Text = "Salir"
-        Me.salir.UseVisualStyleBackColor = True
+        Me.salir.UseVisualStyleBackColor = False
         '
         'Form1
         '
