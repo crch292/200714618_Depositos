@@ -63,13 +63,17 @@
         ytotal = ylino + yalgodon + yseda + yhilo
     End Sub
 
-    Public Sub verificarYardas(ByVal total As Double, ByVal total1 As Double)
+    Public Function verificarYardas(ByVal total As Double, ByVal total1 As Double) As Boolean
+        Dim temporal As Boolean
         If total <> total1 Then
             MsgBox("se excede o faltan yardas para cama seleccionada debe utilizar " & total1 & " yardas", MsgBoxStyle.OkOnly, "error")
+            temporal = False
         Else
             ytotalverificado = ytotal
+            temporal = True
         End If
-    End Sub
+        Return temporal
+    End Function
 
     Public Sub asignarTamaño()
         If rimperial.Checked Then
@@ -141,16 +145,19 @@
     End Sub
 
     Private Sub CalcularToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CalcularToolStripMenuItem.Click
+        Dim t As Boolean
         asignarTamaño()
         verificarYardascomparar()
         inicializarVariables()
-        verificarYardas(ytotal, yardascomparar)
-        asignarPrecioMano()
-        calcularCostoPrecio()
-        calcularPrecioVenta()
-        tcosto.Text = Format(preciocosto, "Q0.00")
-        tventa.Text = Format(precioventa, "Q0.00")
-        calcularPrecioyardas()
+        t = verificarYardas(ytotal, yardascomparar)
+        If t = True Then
+            asignarPrecioMano()
+            calcularCostoPrecio()
+            calcularPrecioVenta()
+            tcosto.Text = Format(preciocosto, "Q0.00")
+            tventa.Text = Format(precioventa, "Q0.00")
+            calcularPrecioyardas()
+        End If
 
 
     End Sub
