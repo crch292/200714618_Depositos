@@ -54,14 +54,14 @@ Partial Class Form1
         '
         'tnombre
         '
-        Me.tnombre.Location = New System.Drawing.Point(115, 36)
+        Me.tnombre.Location = New System.Drawing.Point(142, 37)
         Me.tnombre.Name = "tnombre"
         Me.tnombre.Size = New System.Drawing.Size(175, 21)
         Me.tnombre.TabIndex = 1
         '
         'tnit
         '
-        Me.tnit.Location = New System.Drawing.Point(115, 62)
+        Me.tnit.Location = New System.Drawing.Point(142, 63)
         Me.tnit.Name = "tnit"
         Me.tnit.Size = New System.Drawing.Size(175, 21)
         Me.tnit.TabIndex = 3
@@ -77,7 +77,7 @@ Partial Class Form1
         '
         'tsaldoanterior
         '
-        Me.tsaldoanterior.Location = New System.Drawing.Point(115, 88)
+        Me.tsaldoanterior.Location = New System.Drawing.Point(142, 89)
         Me.tsaldoanterior.Name = "tsaldoanterior"
         Me.tsaldoanterior.Size = New System.Drawing.Size(175, 21)
         Me.tsaldoanterior.TabIndex = 5

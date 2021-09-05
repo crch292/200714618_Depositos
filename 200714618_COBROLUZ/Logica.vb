@@ -29,11 +29,11 @@
 
         resultados.listiposervico.Items.Add(Tiposservicio(indice - 1))
         resultados.listipotarifa.Items.Add(TiposTarifa(indice - 1))
-        resultados.lissaldoanterior.Items.Add(Saldosanteriores(indice - 1))
-        resultados.lispagoinicial.Items.Add(pagosiniciales(indice - 1))
-        resultados.lisdescuento.Items.Add(descuentos(indice - 1))
-        resultados.lismora.Items.Add(recargos(indice - 1))
-        resultados.lispagototal.Items.Add(totalespagar(indice - 1))
+        resultados.lissaldoanterior.Items.Add(Format(Saldosanteriores(indice - 1), "Q0.00"))
+        resultados.lispagoinicial.Items.Add(Format(pagosiniciales(indice - 1), "Q0.00"))
+        resultados.lisdescuento.Items.Add(Format(descuentos(indice - 1), "Q0.00"))
+        resultados.lismora.Items.Add(Format(recargos(indice - 1), "Q0.00"))
+        resultados.lispagototal.Items.Add(Format(totalespagar(indice - 1), "Q0.00"))
 
 
     End Sub
